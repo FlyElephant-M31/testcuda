@@ -1,0 +1,14 @@
+This example performs the classical Gauss-Elimination with back
+substitution to solve a linear equation. It does not perform
+pivotization, but serves as a simple example for shared memory use.
+
+Compiling
+
+This code should be compiled using the NVIDIA CUDA toolkit. Simply
+edit the Makefile and change the variable ROOTDIR at the beginning to
+point to the C/src subdirectory of the SDK (where all the example
+codes reside), and then run make. In case you do not want OpenMP
+parallelization for the CPU code, you can specify NOOMP=y with make.
+
+Unlike the NVIDIA examples, this Makefile puts the resulting
+executable into the local directory, in the bin subfolder.
